@@ -4,7 +4,8 @@
       <div class="panel panel-default">
         <%= link_to image_tag(pin.image.url(:medium)), pin %><br />
         <div class="panel-body">
-          <%= pin.description %>
+          <%= pin.description %><br/>
+          <strong>by <%= pin.user.name if pin.user %></strong>
         </div>
 
         <% if pin.user == current_user %>
