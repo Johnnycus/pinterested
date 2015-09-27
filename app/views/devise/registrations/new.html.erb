@@ -15,11 +15,11 @@
         <% if @validatable %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+        <%= f.password_field :password, autocomplete: 'off', class: 'form-control' %>
       </div>
 
       <div class="actions">
-        <%= f.submit "Sign up", class: 'btn btn-primary' %>
+        <%= f.submit 'Sign up', class: 'btn btn-primary' %>
       </div>
     <% end %>
 
